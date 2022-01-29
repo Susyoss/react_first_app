@@ -1,27 +1,5 @@
-const App = () => {
-  return (
-    <h1>Hello world</h1>
-  );
-};
-
-export default App;
-const App = () => {
-  return (
-    <div>
-      <h1>My first React App</h1>
-      <p>A simple to-do app, with lists, columns and card</p>
-      <form>
-        <input type="text" />
-        <button>Search</button>
-      </form>
-    </div>
-  );
-};
-
-export default App;
-
-import Hero from './Hero/Hero'
-import SearchForm from './SearchForm/SearchForm'
+import Hero from './components/Hero/Hero'
+import SearchForm from './components/SearchForm/SearchForm'
 const App = () => {
   return (
     <div>
@@ -31,3 +9,4 @@ const App = () => {
   );
 };
 
+export default App;
