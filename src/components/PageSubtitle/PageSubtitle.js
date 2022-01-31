@@ -1,9 +1,10 @@
-import PageSubtitle from '../PageSubtitle/PageSubtitle'
+import styles from './PageSubtitle.module.scss';
+import clsx from 'clsx';
 
-const NotFound = () => {
+const PageSubtitle = props => {
   return (
-    <PageSubtitle addMargin>Nothing to see here... move along</PageSubtitle>
+    <p className={clsx(styles.subtitle, props.addMargin && styles.addMargin)}>{props.children}</p>
   );
-};
+}
 
-export default NotFound;
+export default PageSubtitle;
