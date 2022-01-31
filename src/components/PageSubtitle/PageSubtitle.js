@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 const PageSubtitle = props => {
   return (
-    <p className={clsx(styles.subtitle, props.addMargin && styles.addMargin)}>{props.children}</p>
+    <p className={(styles.subtitle, props.addMargin && styles.addMargin)}>{props.children}</p>
   );
 }
 
