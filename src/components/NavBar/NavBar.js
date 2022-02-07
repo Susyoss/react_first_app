@@ -1,20 +1,44 @@
 import styles from './NavBar.module.scss';
-import clsx from 'clsx';
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div className={styles.navbar}>
-    <ul className={styles.navbarList}>
-      <li><a href="/"><span className={clsx("fa fa-bars", styles.navbarIcon)} /></a></li>
-    </ul>
-      <ul className={styles.navbarList}>
-        <li><NavLink className={({ isActive }) => isActive && styles.linkActive} to="/">Home</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive && styles.linkActive} to="/favorite">Favorite</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive && styles.linkActive} to="/about">About</NavLink></li>
+    <nav className={styles.nav}>
+      <ul>
+        <li>
+          <Link to='/' className='fa fa-tasks tasks_icon'>
+            <span>tasks_icon</span>
+          </Link>
+        </li>
       </ul>
-    </div>
+      <ul>
+        <li>
+          <NavLink
+            className={({ isActive }) => isActive ? styles.linkActive : ''}
+            to='/'
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) => isActive ? styles.linkActive : ''}
+            to='/favorite'
+          >
+            Favorite
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) => isActive ? styles.linkActive : ''}
+            to='/about'
+          >
+            About
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
   );
-}
+};
 
 export default NavBar;
