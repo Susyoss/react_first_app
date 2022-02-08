@@ -2,8 +2,8 @@ import styles from './ListForm.module.scss';
 import { useState } from 'react';
 import Button from '../Button/Button.js';
 import TextInput from '../TextInput/TextInput.js';
-import { useDispatch } from 'react-redux'
-import { addList } from '../../redux/store'
+import { useDispatch } from 'react-redux';
+import { addList } from '../Redux/store.js';
 
 const ListForm = props => {
   const [title, setTitle] = useState('');

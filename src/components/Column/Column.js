@@ -1,6 +1,6 @@
-import styles from './Column.module.scss';
+import styles from './Column.modules.scss';
 import Card from '../Card/Card.js';
-import CardForm from '../CardForm/CardForm.js';
+import CardForm from '../Cardform/CardForm.js';
 import { useSelector } from 'react-redux';
 
 const Column = ({ icon, title, id }) => {

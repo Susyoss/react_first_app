@@ -1,5 +1,4 @@
 import styles from './PageSubtitle.module.scss';
-import clsx from 'clsx';
 
 const PageSubtitle = props => {
   return (
