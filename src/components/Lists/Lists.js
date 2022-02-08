@@ -1,4 +1,4 @@
-import styles from './List.module.scss';
+import styles from '../List/List.module.scss';
 import Column from '../Column/Column.js';
 import ColumnForm from '../ColumnForm/ColumnForm.js';
 import { useState } from 'react';

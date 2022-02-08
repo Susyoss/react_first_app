@@ -1,5 +1,5 @@
 import shortid from 'shortid';
-import strContains from '../components/utils/strContains.js';
+import strContains from '../utils/strContains';
 
 //selectors
 export const getFilteredCards = ({ cards, searchString }, columnId) =>
