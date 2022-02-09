@@ -1,4 +1,4 @@
-import styles from './Column.module.scss';
+import styles from '../Column/Column.module.scss';
 import Card from '../Card/Card.js';
 import CardForm from '../Cardform/CardForm.js';
 import { useSelector } from 'react-redux';

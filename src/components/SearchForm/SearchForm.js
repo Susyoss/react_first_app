@@ -16,6 +16,13 @@ const SearchForm = () => {
     setsearchString('')
   }
 
+  useEffect(() => {
+    return () => {
+      dispatch({ type: 'UPDATE_SEARCHSTRING', payload: '' });
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <form onSubmit={handleSubmit} className={styles.searchForm} >
       <TextInput placeholder="Search..." type="text" value={searchString} onChange={e => setsearchString(e.target.value)}/>
