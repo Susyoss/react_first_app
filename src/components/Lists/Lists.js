@@ -3,6 +3,7 @@ import Column from '../Column/Column.js';
 import ColumnForm from '../ColumnForm/ColumnForm.js';
 import { useState } from 'react';
 import shortid from 'shortid';
+import SearchForm from '../SearchForm/SearchForm';
 
 const List = () => {
   const [columns, setColumns] = useState([
@@ -60,9 +61,10 @@ const List = () => {
     });
     setColumns(columnsUpdated);
   };
-
+  
   return (
     <div className={styles.list}>
+      <SearchForm />
       <header className={styles.header}>
         <h2 className={styles.title}>
           Things to do <span>soon</span>
